@@ -1,4 +1,55 @@
 .header {
     padding: 20px 0;
     width: 100%;
+    z-index: 2;
+
+    .header__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {
+        width: 300px;
+        height: 65px;
+        background: url('../images/logo.svg') center center no-repeat;
+        background-size: contain;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__menu {
+        margin-right: 20px;
+        display: flex;
+        z-index: 2;
+
+        .menu__item {
+            margin-right: 20px;
+        }
+
+        .item__link {
+            color: #fff;
+            transition: .3s;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .nav__phone {
+        z-index: 2;
+        background: #fff;
+        border-radius: 22px;
+        padding: 10px;
+        transition: .3s;
+
+        &:hover {
+            background: $orange;
+            color: #fff;
+        }
+    }
 }
