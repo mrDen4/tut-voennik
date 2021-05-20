@@ -1,3 +1,9 @@
 $(document).ready(function () {
-    console.log('hello');
+    $('.hero__slider').slick({
+        arrows: false
+    });
+
+    $('.year__slider').slick({
+        arrows: false
+    });
 });

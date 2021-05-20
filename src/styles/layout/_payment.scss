@@ -1,0 +1,90 @@
+.payment {
+    padding-top: 75px;
+
+    .payment__title {
+        margin-bottom: 20px;
+    }
+
+    .payment__subtitle {
+        text-align: center;
+        color: $gray;
+        font-size: 30px;
+        margin: 0 0 60px 0;
+    }
+
+    .payment__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .list__item {
+            width: 30%;
+            background: #F5F4F4;
+            border: 2px solid #E6E5E5;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 40px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+
+            .item__icon {
+                margin-bottom: 10px;
+            }
+
+            .item__title {
+                margin: 0 0 15px 0;
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .item__text {
+                margin: 0;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.payment-method {
+    background: url('../images/payment/bg.svg') center center no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+
+    .payment-method__title {
+        color: #fff;
+        font-size: 36px;
+        margin: 0 0 40px 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .payment-method__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .payment-method__btn {
+        background: #FFFFFF;
+        border: none;
+        box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 32px;
+        color: #000;
+        padding: 20px 40px;
+        transition: .3s;
+        margin-right: 30px;
+
+        &:hover {
+            color: #fff;
+            background: $orange;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

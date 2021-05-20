@@ -1,3 +1,112 @@
 .hero {
-    height: 100vh;
+    padding-top: 85px;
+    z-index: 2;
+
+    .hero__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center ;
+        align-items: center;
+    }
+
+    .hero__main {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        z-index: 2;
+
+        .main__subtitle {
+            font-size: 30px;
+            color: $gray;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .main__title {
+            font-size: 65px;
+            font-weight: 900;
+            margin: 0;
+        }
+
+        .main__form {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 90px;
+        }
+
+        .form__inp {
+            background: #FFFFFF;
+            border: none;
+            box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 32px;
+            margin-right: -50px;
+            padding: 20px 40px;
+            color: $gray;
+            font-size: 18px;
+            z-index: 2;
+        }
+
+        .form__btn {
+            background: linear-gradient(90deg, #0B02E2 0%, #8000FF 105.29%);
+            border-radius: 32px;
+            padding: 20px 40px;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            z-index: 2;
+            transition: .3s;
+
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+
+    .hero__slider {
+        width: 40%;
+        z-index: 2;
+    }
+
+    .hero__about {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 75px;
+
+        .about__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item__text {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0;
+
+            &--color {
+                color: $blue;
+                font-size: 50px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .hero__btn-arrow {
+        width: 76px;
+        height: 33px;
+        background: none;
+        background-image: url('../images/hero-arrow-down.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        transition: .3s;
+        z-index: 2;
+
+        &:hover {
+            background-image: url('../images/hero-arrow-down-active.svg');
+        }
+    }
 }
