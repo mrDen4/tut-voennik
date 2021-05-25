@@ -54,6 +54,9 @@ a {
   text-align: center;
   width: 100%; }
 
+.text {
+  padding: 75px 0; }
+
 .header {
   padding: 20px 0;
   width: 100%;
