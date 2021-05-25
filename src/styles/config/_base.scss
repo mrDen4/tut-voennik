@@ -42,14 +42,14 @@ a {
 }
 
 .hero-bg {
-  background: url('../images/hero-bg.svg') no-repeat center center;
+  background: url('../images/hero-bg.png') no-repeat center center;
   background-size: contain;
   position: absolute;
   top: 0;
-  left: 35%;
+  right: 0;
   z-index: 0;
-  width: 1200px;
-  height: 925px;
+  width: 1109px;
+  height: 1008px;
 }
 
 .title {

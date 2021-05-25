@@ -1,0 +1,36 @@
+.callback {
+    background: url('../images/callback-bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+
+    .callback__container {
+        align-items: center;
+    }
+
+    .callback__title {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .callback__subtitle {
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 0 30px 0;
+        color: #fff;
+    }
+
+    .callback__btn {
+        color: #fff;
+        padding: 15px 25px;
+        border: none;
+        background: #FF7A00;
+        border-radius: 30px;   
+        font-size: 20px;
+        font-weight: 700; 
+        transition: .3s;
+
+        &:hover {
+            background: $blue;
+        }
+    }
+}

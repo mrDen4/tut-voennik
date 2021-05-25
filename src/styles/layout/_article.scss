@@ -1,0 +1,41 @@
+.article {
+    padding: 75px 0;
+    .article__container {
+        align-items: center;
+    }
+
+    .article__top {
+        background: url('../images/article-top.jpg') center center no-repeat;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 75px 0;
+
+        .top__title {
+            font-size: 48px;
+            font-weight: 500;
+            margin: 0 0 20px 0;
+        }
+
+        .top__subtitle {
+            font-size: 38px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    .article__title {
+        font-size: 40px;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+
+    .article__text {
+        font-size: 18px;
+    }
+
+    .article__img {
+        width: 80%;
+        margin: 20px 0;
+    }
+}

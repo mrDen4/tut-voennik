@@ -1,0 +1,69 @@
+.contacts {
+    background: url('../images/contacts-bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 75px 0;
+
+    .contacts__title {
+        color: #fff;
+    }
+
+    .contacts__info {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .info__text {
+        margin: 10px 0;
+    }
+
+    .info__socials {
+        display: flex;
+        margin-top: 35px;
+
+        .socials__link {
+            width: 40px;
+            height: 40px;
+            margin-right: 25px;
+            transition: .3s;
+
+            &--vk {
+                background: url('../images/icons/vk.svg') center center no-repeat;
+                background-size: contain;
+
+                &:hover {
+                    background: url('../images/icons/vk-active.svg') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &--inst {
+                background: url('../images/icons/inst.svg') center center no-repeat;
+                background-size: contain;
+
+                &:hover {
+                    background: url('../images/icons/inst-active.svg') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &--fb {
+                background: url('../images/icons/fb.svg') center center no-repeat;
+                background-size: contain;
+
+                &:hover {
+                    background: url('../images/icons/fb-active.svg') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.contacts__title {
+    margin: 60px 0;
+}

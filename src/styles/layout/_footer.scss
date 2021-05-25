@@ -1,0 +1,119 @@
+.footer {
+    padding: 40px 0;
+    background: url('../images/footer-bg.jpg') center center no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+
+    .footer__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+
+        .footer__logo {
+            display: flex;
+            width: 300px;
+            height: 65px;
+            background: url('../images/logo-footer.svg') center center no-repeat;
+            margin-bottom: 20px;
+        }
+
+        .footer__link {
+            color: #fff;
+            font-size: 18px;
+            transition: .3s;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .footer__list {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+
+        .list__item {
+
+            .item__link {
+                color: #fff;
+                transition: .3s;
+
+                &:hover {
+                    color: $orange;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .footer__right {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        align-items: flex-end;
+
+        .footer__phone {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .footer__socials {
+        display: flex;
+
+        .socials__link {
+            width: 40px;
+            height: 40px;
+            margin-right: 25px;
+            transition: .3s;
+
+            &--vk {
+                background: url('../images/icons/vk.svg') center center no-repeat;
+                background-size: contain;
+
+                &:hover {
+                    background: url('../images/icons/vk-active.svg') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &--inst {
+                background: url('../images/icons/inst.svg') center center no-repeat;
+                background-size: contain;
+
+                &:hover {
+                    background: url('../images/icons/inst-active.svg') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &--fb {
+                background: url('../images/icons/fb.svg') center center no-repeat;
+                background-size: contain;
+
+                &:hover {
+                    background: url('../images/icons/fb-active.svg') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

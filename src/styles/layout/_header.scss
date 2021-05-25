@@ -2,6 +2,7 @@
     padding: 20px 0;
     width: 100%;
     z-index: 2;
+    background: url('../images/header-bg.png') center right no-repeat;
 
     .header__container {
         flex-direction: row;
@@ -14,6 +15,7 @@
         height: 65px;
         background: url('../images/logo.svg') center center no-repeat;
         background-size: contain;
+        z-index: 2;
     }
 
     .header__nav {
@@ -46,6 +48,7 @@
         border-radius: 22px;
         padding: 10px;
         transition: .3s;
+        color: $orange;
 
         &:hover {
             background: $orange;

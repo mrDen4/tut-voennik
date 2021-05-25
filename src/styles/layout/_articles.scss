@@ -1,0 +1,87 @@
+.articles {
+    padding: 75px 0;
+
+    .articles__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .list__item {
+            width: 45%;
+            display: flex;
+            background: #F5F4F4;
+            border: 2px solid #E6E5E5;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 50px;
+
+            .item__link {
+                display: flex;
+                padding: 20px 30px;
+            }
+
+            .item__img {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+            }
+
+            .img__img {
+                width: 100%;
+            }
+
+            .item__content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .content__title {
+                font-size: 24px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .content__text {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .content__tag {
+                font-size: 24px;
+                color: $gray;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .articles__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .pagination__link, .pagination__text {
+            margin-right: 30px;
+            font-size: 22px;
+            font-weight: 400;
+            transition: .3s;
+
+            &--active {
+                font-size: 26px;
+                font-weight: 700;
+            }
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
