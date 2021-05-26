@@ -2,7 +2,12 @@
     padding: 20px 0;
     width: 100%;
     z-index: 2;
-    background: url('../images/header-bg.png') center right no-repeat;
+    background: url("../images/header-bg.png") 235% 100% no-repeat;
+
+    @include tablets() {
+        background: url("../images/header-bg.png") -112% 175% no-repeat;
+        padding: 15px 0;
+    }
 
     @include phones() {
         background: url('../images/header-bg-phone.png') 100% 0% no-repeat;
@@ -32,7 +37,7 @@
         display: flex;
         align-items: center;
 
-        @include phones() {
+        @include tablets() {
             flex-wrap: wrap;
             justify-content: flex-end;
         }
@@ -43,12 +48,24 @@
         display: flex;
         z-index: 2;
 
+        @include tablets() {
+            margin: 0 0 25px 0;
+        }
+
         @include phones() {
             margin: 0 0 15px 0;
         }
 
         .menu__item {
             margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @include tablets() {
+                margin-right: 15px;
+            }
 
             @include phones() {
                 margin-right: 7px;
@@ -82,17 +99,18 @@
             color: #fff;
         }
 
-        &--orange {
-
-            @include phones() {
-                color: #fff;
-                background: $orange;
-            }
+        @include tablets() {
+            font-size: 14px;
+            padding: 5px;
+            color: #fff;
+            background: $orange;
         }
 
         @include phones() {
             font-size: 8px;
             padding: 5px;
+            color: #fff;
+            background: $orange;
         }
     }
 }

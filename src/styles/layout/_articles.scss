@@ -1,6 +1,10 @@
 .articles {
     padding: 75px 0;
 
+    @include tablets() {
+        padding: 50px 0;
+    }
+
     @include phones() {
         padding: 15px 0;
     }
@@ -20,6 +24,10 @@
             border-radius: 10px;
             margin-bottom: 50px;
 
+            @include tablets() {
+                margin-bottom: 25px;
+            }
+
             @include phones() {
                 margin-bottom: 20px;
             }
@@ -28,6 +36,11 @@
                 display: flex;
                 padding: 20px 30px;
                 width: 100%;
+
+                @include tablets() {
+                    flex-direction: column;
+                    padding: 10px 15px;
+                }
 
                 @include phones() {
                     flex-direction: column;
@@ -42,20 +55,24 @@
                 justify-content: center;
                 margin-right: 20px;
 
-                @include phones() {
+                @include tablets() {
                     width: 100%;
                 }
             }
 
             .img__img {
                 width: 100%;
+
+                @include tablets() {
+                    width: 60%;
+                }
             }
 
             .item__content {
                 display: flex;
                 flex-direction: column;
 
-                @include phones() {
+                @include tablets() {
                     width: 100%;
                 }
             }
@@ -70,6 +87,10 @@
                 font-size: 24px;
                 font-weight: bold;
                 margin: 0;
+
+                @include tablets() {
+                    font-size: 18px;
+                }
 
                 @include phones() {
                     font-size: 10px;
@@ -86,6 +107,10 @@
             }
 
             .content__date {
+                @include tablets() {
+                    font-size: 14px;
+                }
+
                 @include phones() {
                     font-size: 7px;
                 }
@@ -95,6 +120,10 @@
                 font-size: 24px;
                 color: $gray;
                 font-weight: 500;
+
+                @include tablets() {
+                    font-size: 14px;
+                }
 
                 @include phones() {
                     font-size: 7px;

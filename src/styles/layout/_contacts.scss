@@ -3,6 +3,10 @@
     background-size: cover;
     padding: 75px 0;
 
+    @include tablets() {
+        padding: 50px 0;
+    }
+
     @include phones() {
         padding: 15px 0;
     }
@@ -19,6 +23,10 @@
 
     .info__text {
         margin: 10px 0;
+
+        @include tablets() {
+            font-size: 14px;
+        }
 
         @include phones() {
             margin: 5px 0;
@@ -39,6 +47,11 @@
             height: 40px;
             margin-right: 25px;
             transition: .3s;
+
+            @include tablets() {
+                width: 25px;
+                height: 25px;
+            }
 
             &--vk {
                 background: url('../images/icons/vk.svg') center center no-repeat;
@@ -79,6 +92,10 @@
 
 .contacts__title {
     margin: 60px 0;
+
+    @include tablets() {
+        margin: 30px 0;
+    }
 
     @include phones() {
         margin: 15px 0;

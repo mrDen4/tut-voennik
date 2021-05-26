@@ -1,6 +1,10 @@
 .reviews {
     padding-top: 50px;
 
+    @include tablets() {
+        padding-top: 50px;
+    }
+
     @include phones() {
         padding-top: 15px;
     }
@@ -23,6 +27,10 @@
         flex-wrap: wrap;
         align-items: center;
 
+        @include tablets() {
+            padding: 10px 15px;
+        }
+
         @include phones() {
             padding: 5px;
         }
@@ -32,6 +40,12 @@
             height: 95px;
             border-radius: 50%;
             margin: 0 20px 15px 0;
+
+            @include tablets() {
+                width: 50px;
+                height: 50px;
+                margin: 0 10px 10px 0;
+            }
 
             @include phones() {
                 width: 25px;
@@ -44,6 +58,10 @@
             font-size: 36px;
             margin: 0;
 
+            @include tablets() {
+                font-size: 20px;
+            }
+
             @include phones() {
                 font-size: 10px;
             }
@@ -54,6 +72,10 @@
             font-weight: 300;
             width: 100%;
             margin: 15px 0 20px 0;
+
+            @include tablets() {
+                font-size: 14px;
+            }
 
             @include phones() {
                 font-size: 7px;
@@ -71,6 +93,11 @@
             justify-content: center;
             color: #fff;
             margin-left: auto;
+
+            @include tablets() {
+                font-size: 14px;
+                width: 100%;
+            }
 
             @include phones() {
                 font-size: 7px;

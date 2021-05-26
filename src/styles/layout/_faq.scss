@@ -1,6 +1,10 @@
 .faq {
     padding: 75px 0;
 
+    @include tablets() {
+        padding: 50px 0;
+    }
+
     @include phones() {
         padding: 15px 0;
     }
@@ -13,6 +17,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
+
+        @include tablets() {
+            margin-bottom: 20px;
+        }
 
         @include phones() {
             margin-bottom: 15px;
@@ -28,6 +36,10 @@
             align-items: center;
             justify-content: space-between;
 
+            @include tablets() {
+                padding: 10px 20px;
+            }
+
             @include phones() {
                 padding: 5px 15px;
             }
@@ -36,6 +48,10 @@
                 margin: 0;
                 font-size: 18px;
                 font-weight: 500;
+
+                @include tablets() {
+                    font-size: 14px;
+                }
 
                 @include phones() {
                     font-size: 7px;
@@ -49,6 +65,11 @@
                 background: url('../images/icons/faq-open.svg') center center no-repeat;
                 border: none;
                 background-size: contain;
+
+                @include tablets() {
+                    width: 30px;
+                    height: 30px;
+                }
 
                 @include phones() {
                     width: 10px;
@@ -78,6 +99,10 @@
                     font-size: 18px;
                     font-weight: 300;
 
+                    @include tablets() {
+                        font-size: 14px;
+                    }
+
                     @include phones() {
                         font-size: 7px;
                     }
@@ -95,6 +120,11 @@
         border: none;
         font-size: 20px;
         font-weight: 700;
+
+        @include tablets() {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
 
         @include phones() {
             font-size: 8px;

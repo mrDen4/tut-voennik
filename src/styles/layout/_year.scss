@@ -6,6 +6,10 @@
     width: 100%;
     padding-top: 75px;
 
+    @include tablets() {
+        padding-top: 50px;
+    }
+
     @include phones() {
         padding-top: 20px;
     }
@@ -13,6 +17,10 @@
     .year__slider {
         width: 100%;
         margin-bottom: 70px;
+
+        @include tablets() {
+            margin-bottom: 30px;
+        }
 
         @include phones() {
             margin-bottom: 15px;
@@ -26,6 +34,12 @@
         transition: .3s;
         padding: 25px 35px;
         font-size: 22px;
+
+        @include tablets() {
+            padding: 15px 20px;
+            font-size: 14px;
+            border: 2px solid $orange;
+        }
 
         @include phones() {
             padding: 10px 15px;
