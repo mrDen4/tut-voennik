@@ -6,9 +6,17 @@
     width: 100%;
     padding-top: 75px;
 
+    @include phones() {
+        padding-top: 20px;
+    }
+
     .year__slider {
         width: 100%;
         margin-bottom: 70px;
+
+        @include phones() {
+            margin-bottom: 15px;
+        }
     }
 
     .year__btn {
@@ -18,6 +26,11 @@
         transition: .3s;
         padding: 25px 35px;
         font-size: 22px;
+
+        @include phones() {
+            padding: 10px 15px;
+            font-size: 8px;
+        }
 
         &:hover {
             color: #fff;

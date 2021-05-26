@@ -1,6 +1,10 @@
 .work {
     padding-top: 80px;
 
+    @include phones() {
+        padding-top: 15px;
+    }
+
     .work__list {
         display: flex;
         flex-direction: column;
@@ -30,6 +34,13 @@
                 font-weight: 700;
                 transition: .3s;
 
+                @include phones() {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 15px;
+                    border: 3px solid rgba(255, 255, 255, 0.23);
+                }
+
                 // &:hover {
                 //     background: $orange;
                 //     border: 9px solid rgba(255, 255, 255, 0.23);
@@ -47,13 +58,26 @@
                 top: 0;
                 width: 350px;
 
+                @include phones() {
+                    font-size: 9px;
+                    width: 145px;
+                }
+
                 &--right {
                     left: 125px;
+
+                    @include phones() {
+                        left: 50px;
+                    }
                 }
 
                 &--left {
                     right: 125px;
                     text-align: center;
+
+                    @include phones() {
+                        right: 50px;
+                    }
                 }
 
                 &--bold {

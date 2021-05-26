@@ -4,10 +4,19 @@
     background-size: cover;
     margin-top: 60px;
 
+    @include phones() {
+        padding: 15px 0;
+        margin-top: 15px;
+    }
+
     .footer__container {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            flex-wrap: wrap;
+        }
     }
 
     .footer__left {
@@ -17,18 +26,33 @@
         justify-content: center;
         width: 25%;
 
+        @include phones() {
+            width: 40%;
+        }
+
         .footer__logo {
             display: flex;
             width: 300px;
             height: 65px;
             background: url('../images/logo-footer.svg') center center no-repeat;
             margin-bottom: 20px;
+
+            @include phones() {
+                margin-bottom: 15px;
+                width: 115px;
+                height: 22px;
+                background: url('../images/logo-footer-mob.svg') center center no-repeat;
+            }
         }
 
         .footer__link {
             color: #fff;
             font-size: 18px;
             transition: .3s;
+
+            @include phones() {
+                font-size: 7px;
+            }
 
             &:hover {
                 color: $orange;
@@ -38,18 +62,26 @@
 
     .footer__list {
         display: flex;
-        width: 50%;
+        width: 40%;
         justify-content: space-between;
+
+        @include phones() {
+            width: 60%;
+        }
 
         .list__item {
 
             .item__link {
                 color: #fff;
                 transition: .3s;
+                font-size: 18px;
+
+                @include phones() {
+                    font-size: 7px;
+                }
 
                 &:hover {
                     color: $orange;
-                    font-size: 18px;
                 }
             }
         }
@@ -61,10 +93,19 @@
         width: 15%;
         align-items: flex-end;
 
+        @include phones() {
+            width: 100%;
+        }
+
         .footer__phone {
             color: #fff;
             font-size: 18px;
             margin-bottom: 20px;
+
+            @include phones() {
+                font-size: 7px;
+                margin-bottom: 5px;
+            }
 
             &:hover {
                 color: $orange;
@@ -80,6 +121,12 @@
             height: 40px;
             margin-right: 25px;
             transition: .3s;
+
+            @include phones() {
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+            }
 
             &--vk {
                 background: url('../images/icons/vk.svg') center center no-repeat;

@@ -2,6 +2,10 @@
     padding-top: 85px;
     z-index: 2;
 
+    @include phones() {
+        padding-top: 20px;
+    }
+
     .hero__container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -20,18 +24,34 @@
             color: $gray;
             font-weight: 400;
             margin: 0;
+
+            @include phones() {
+                font-size: 15px;
+            }
         }
 
         .main__title {
             font-size: 65px;
             font-weight: 900;
             margin: 0;
+
+            @include phones() {
+                font-size: 20px;
+            }
         }
 
         .main__form {
             font-size: 30px;
             font-weight: 400;
             margin-bottom: 90px;
+
+            @include phones() {
+                margin-bottom: 20px;
+            }
+        }
+
+        .form__title {
+            font-size: 8px;
         }
 
         .form__inp {
@@ -39,11 +59,16 @@
             border: none;
             box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.2);
             border-radius: 32px;
-            margin-right: -50px;
+            margin-right: -60px;
             padding: 20px 40px;
             color: $gray;
             font-size: 18px;
             z-index: 2;
+
+            @include phones() {
+                font-size: 7px;
+                padding: 10px 15px;
+            }
         }
 
         .form__btn {
@@ -55,6 +80,11 @@
             border: none;
             z-index: 2;
             transition: .3s;
+
+            @include phones() {
+                font-size: 7px;
+                padding: 10px 15px;
+            }
 
             &:hover {
                 background: $orange;
@@ -73,6 +103,10 @@
         justify-content: space-around;
         margin-bottom: 75px;
 
+        @include phones() {
+            margin-bottom: 20px;
+        }
+
         .about__item {
             display: flex;
             flex-direction: column;
@@ -85,11 +119,19 @@
             font-weight: 500;
             margin: 0;
 
+            @include phones() {
+                font-size: 8px;
+            }
+
             &--color {
                 color: $blue;
                 font-size: 50px;
                 font-weight: bold;
                 margin-bottom: 15px;
+
+                @include phones() {
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -104,6 +146,11 @@
         border: none;
         transition: .3s;
         z-index: 2;
+
+        @include phones() {
+            width: 20px;
+            height: 9px;
+        }
 
         &:hover {
             background-image: url('../images/hero-arrow-down-active.svg');

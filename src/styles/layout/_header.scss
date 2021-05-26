@@ -4,6 +4,11 @@
     z-index: 2;
     background: url('../images/header-bg.png') center right no-repeat;
 
+    @include phones() {
+        background: url('../images/header-bg-phone.png') 100% 0% no-repeat;
+        padding: 5px 0;
+    }
+
     .header__container {
         flex-direction: row;
         justify-content: space-between;
@@ -16,11 +21,21 @@
         background: url('../images/logo.svg') center center no-repeat;
         background-size: contain;
         z-index: 2;
+
+        @include phones() {
+            width: 100px;
+            height: 22px;
+        }
     }
 
     .header__nav {
         display: flex;
         align-items: center;
+
+        @include phones() {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
     }
 
     .nav__menu {
@@ -28,13 +43,25 @@
         display: flex;
         z-index: 2;
 
+        @include phones() {
+            margin: 0 0 15px 0;
+        }
+
         .menu__item {
             margin-right: 20px;
+
+            @include phones() {
+                margin-right: 7px;
+            }
         }
 
         .item__link {
             color: #fff;
             transition: .3s;
+
+            @include phones() {
+                font-size: 7px;
+            }
 
             &:hover {
                 color: $orange;
@@ -53,6 +80,19 @@
         &:hover {
             background: $orange;
             color: #fff;
+        }
+
+        &--orange {
+
+            @include phones() {
+                color: #fff;
+                background: $orange;
+            }
+        }
+
+        @include phones() {
+            font-size: 8px;
+            padding: 5px;
         }
     }
 }

@@ -1,6 +1,10 @@
 .faq {
     padding: 75px 0;
 
+    @include phones() {
+        padding: 15px 0;
+    }
+
     .faq__container {
         align-items: center;
     }
@@ -9,6 +13,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
+
+        @include phones() {
+            margin-bottom: 15px;
+        }
 
         .list__item {
             background: #FFFFFF;
@@ -20,10 +28,18 @@
             align-items: center;
             justify-content: space-between;
 
+            @include phones() {
+                padding: 5px 15px;
+            }
+
             .item__text {
                 margin: 0;
                 font-size: 18px;
                 font-weight: 500;
+
+                @include phones() {
+                    font-size: 7px;
+                }
             }
 
             .item__btn {
@@ -32,11 +48,18 @@
                 background: none;
                 background: url('../images/icons/faq-open.svg') center center no-repeat;
                 border: none;
+                background-size: contain;
+
+                @include phones() {
+                    width: 10px;
+                    height: 10px;
+                }
             }
 
             &--active {
                 .item__btn {
                     background: url('../images/icons/faq-close.svg') center center no-repeat;
+                    background-size: contain;
                 }
             }
         }
@@ -54,6 +77,10 @@
                 .item-about__text {
                     font-size: 18px;
                     font-weight: 300;
+
+                    @include phones() {
+                        font-size: 7px;
+                    }
                 }
             }
         }
@@ -68,6 +95,11 @@
         border: none;
         font-size: 20px;
         font-weight: 700;
+
+        @include phones() {
+            font-size: 8px;
+            padding: 5px 15px;
+        }
 
         &:hover {
             background: $orange;

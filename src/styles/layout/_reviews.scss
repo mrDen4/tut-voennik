@@ -1,5 +1,9 @@
 .reviews {
     padding-top: 50px;
+
+    @include phones() {
+        padding-top: 15px;
+    }
     
     .reviews__container {
         flex-wrap: wrap;
@@ -19,16 +23,30 @@
         flex-wrap: wrap;
         align-items: center;
 
+        @include phones() {
+            padding: 5px;
+        }
+
         .item__img {
             width: 95px;
             height: 95px;
             border-radius: 50%;
             margin: 0 20px 15px 0;
+
+            @include phones() {
+                width: 25px;
+                height: 25px;
+                margin: 0 5px 5px 0;
+            }
         }
 
         .item__name {
             font-size: 36px;
             margin: 0;
+
+            @include phones() {
+                font-size: 10px;
+            }
         }
 
         .item__text {
@@ -36,6 +54,10 @@
             font-weight: 300;
             width: 100%;
             margin: 15px 0 20px 0;
+
+            @include phones() {
+                font-size: 7px;
+            }
         }
 
         .item__btn {
@@ -49,6 +71,11 @@
             justify-content: center;
             color: #fff;
             margin-left: auto;
+
+            @include phones() {
+                font-size: 7px;
+                width: 100%;
+            }
 
             &:hover {
                 background: $orange;

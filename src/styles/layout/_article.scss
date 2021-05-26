@@ -1,5 +1,9 @@
 .article {
     padding: 75px 0;
+
+    @include phones() {
+        padding: 15px 0;
+    }
     .article__container {
         align-items: center;
     }
@@ -11,16 +15,29 @@
         text-align: center;
         padding: 75px 0;
 
+        @include phones() {
+            padding: 15px 0;
+        }
+
         .top__title {
             font-size: 48px;
             font-weight: 500;
             margin: 0 0 20px 0;
+
+            @include phones() {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
         }
 
         .top__subtitle {
             font-size: 38px;
             font-weight: 400;
             margin: 0;
+
+            @include phones() {
+                font-size: 10px;
+            }
         }
     }
 
@@ -28,10 +45,19 @@
         font-size: 40px;
         font-weight: 400;
         margin: 40px 0;
+
+        @include phones() {
+            font-size: 10px;
+            margin: 10px 0;
+        }
     }
 
     .article__text {
         font-size: 18px;
+
+        @include phones() {
+            font-size: 10px;
+        }
     }
 
     .article__img {

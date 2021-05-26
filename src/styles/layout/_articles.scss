@@ -1,6 +1,10 @@
 .articles {
     padding: 75px 0;
 
+    @include phones() {
+        padding: 15px 0;
+    }
+
     .articles__list {
         display: flex;
         flex-wrap: wrap;
@@ -16,9 +20,19 @@
             border-radius: 10px;
             margin-bottom: 50px;
 
+            @include phones() {
+                margin-bottom: 20px;
+            }
+
             .item__link {
                 display: flex;
                 padding: 20px 30px;
+                width: 100%;
+
+                @include phones() {
+                    flex-direction: column;
+                    padding: 10px 15px;
+                }
             }
 
             .item__img {
@@ -27,6 +41,10 @@
                 align-items: center;
                 justify-content: center;
                 margin-right: 20px;
+
+                @include phones() {
+                    width: 100%;
+                }
             }
 
             .img__img {
@@ -36,6 +54,10 @@
             .item__content {
                 display: flex;
                 flex-direction: column;
+
+                @include phones() {
+                    width: 100%;
+                }
             }
 
             .content__row {
@@ -48,17 +70,35 @@
                 font-size: 24px;
                 font-weight: bold;
                 margin: 0;
+
+                @include phones() {
+                    font-size: 10px;
+                }
             }
 
             .content__text {
                 font-size: 14px;
                 margin: 0;
+
+                @include phones() {
+                    font-size: 7px;
+                }
+            }
+
+            .content__date {
+                @include phones() {
+                    font-size: 7px;
+                }
             }
 
             .content__tag {
                 font-size: 24px;
                 color: $gray;
                 font-weight: 500;
+
+                @include phones() {
+                    font-size: 7px;
+                }
             }
         }
     }
@@ -73,10 +113,19 @@
             font-size: 22px;
             font-weight: 400;
             transition: .3s;
+            
+            @include phones() {
+                font-size: 12px;
+                margin-right: 10px;
+            }
 
             &--active {
                 font-size: 26px;
                 font-weight: 700;
+
+                @include phones() {
+                    font-size: 14px;
+                }
             }
 
             &:hover {
