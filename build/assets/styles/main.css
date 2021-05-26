@@ -415,6 +415,12 @@ a {
         .work .work__list .list__item .item__num--active {
           background: #FF7A00;
           border: 9px solid rgba(255, 255, 255, 0.23); }
+          @media screen and (max-width: 768px) {
+            .work .work__list .list__item .item__num--active {
+              border: 5px solid rgba(255, 255, 255, 0.23); } }
+          @media screen and (max-width: 576px) {
+            .work .work__list .list__item .item__num--active {
+              border: 3px solid rgba(255, 255, 255, 0.23); } }
       .work .work__list .list__item .item__text {
         font-size: 24px;
         position: absolute;
