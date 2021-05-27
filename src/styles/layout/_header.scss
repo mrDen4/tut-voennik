@@ -2,7 +2,8 @@
     padding: 20px 0;
     width: 100%;
     z-index: 2;
-    background: url("../images/header-bg.png") 235% 100% no-repeat;
+    background: url("../images/header-bg.png") right center no-repeat;
+    background-size: 68%;
 
     @include tablets() {
         background: url("../images/header-bg.png") -112% 175% no-repeat;
@@ -40,6 +41,12 @@
         @include tablets() {
             flex-wrap: wrap;
             justify-content: flex-end;
+        }
+
+        @include phones() {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
     }
 

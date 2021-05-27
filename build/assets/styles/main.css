@@ -99,7 +99,8 @@ a {
   padding: 20px 0;
   width: 100%;
   z-index: 2;
-  background: url("../images/header-bg.png") 235% 100% no-repeat; }
+  background: url("../images/header-bg.png") right center no-repeat;
+  background-size: 68%; }
   @media screen and (max-width: 768px) {
     .header {
       background: url("../images/header-bg.png") -112% 175% no-repeat;
@@ -129,6 +130,11 @@ a {
       .header .header__nav {
         flex-wrap: wrap;
         justify-content: flex-end; } }
+    @media screen and (max-width: 576px) {
+      .header .header__nav {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end; } }
   .header .nav__menu {
     margin-right: 20px;
     display: flex;
@@ -245,6 +251,9 @@ a {
       color: #A5A3A3;
       font-size: 18px;
       z-index: 2; }
+      @media screen and (max-width: 1048px) {
+        .hero .hero__main .form__inp {
+          padding: 20px 25px; } }
       @media screen and (max-width: 768px) {
         .hero .hero__main .form__inp {
           font-size: 14px;
